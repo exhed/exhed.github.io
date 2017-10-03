@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>X's and O's</title>
+		<link rel="stylesheet" type="text/css" href="css/ttt.css"/>
+		<script src="js/ttt.js"></script>
+	</head>
+	
+	
+	<body>
+		<hl id="song" class="title">X's & O's</hl>
+		<p>
+		<div id="cont00" class="cont" onclick="clickTTT(0,0)" style="
+    height: 79px;
+"> </div>
+
+			<div id="cont01" class="cont" onclick="clickTTT(0,1)" style="
+    height: 79px;
+"> </div>
+		<div id="cont02" class="cont" onclick="clickTTT(0,2)" style="
+    height: 79px;
+"> </div>
+		<div id="cont10" class="cont" onclick="clickTTT(1,0)" style="
+    height: 79px;
+"> </div>
+		<div id="cont11" class="cont" onclick="clickTTT(1,1)" style="
+    height: 79px;
+"> </div>
+			<div id="cont12" class="cont" onclick="clickTTT(1,2)" style="
+    height: 79px;
+"> </div>
+		</p>
+		<p>
+		<div id="cont20" class="cont" onclick="clickTTT(2,0)" style="
+    height: 79px;
+"> </div>
+			<div id="cont21" class="cont" onclick="clickTTT(2,1)" style="
+    height: 79px;
+"> </div>
+			<div id="cont22" class="cont" onclick="clickTTT(2,2)" style="
+    height: 79px;
+"> </div>
+		</p>
+
+		
+		<div id="cont23" class="cont" onclick="clearBoard()">clear<br></div>
+		
+		<audio id="xando" preload loop>
+			<source src="audio/xando.mp3" type="audio/mpeg">
+			<source src="audio/xando.ogg" type="audio/ogg">
+		</audio>			
+		<h2 id="x-wins" class="title">X Wins: 0</h2>
+		<h2 id="o-wins" class="title">O Wins: 0</h2>
+	</body>
+</html>
